@@ -22,6 +22,7 @@
 		95CB2C171861F90600DFCD90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CB2BF61861F90600DFCD90 /* UIKit.framework */; };
 		95CB2C1F1861F90700DFCD90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95CB2C1D1861F90700DFCD90 /* InfoPlist.strings */; };
 		95CB2C211861F90700DFCD90 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CB2C201861F90700DFCD90 /* MatchismoTests.m */; };
+		95CB2C2C18625EA300DFCD90 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CB2C2B18625EA300DFCD90 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		95CB2C1C1861F90700DFCD90 /* MatchismoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchismoTests-Info.plist"; sourceTree = "<group>"; };
 		95CB2C1E1861F90700DFCD90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95CB2C201861F90700DFCD90 /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		95CB2C2A18625EA300DFCD90 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		95CB2C2B18625EA300DFCD90 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +117,8 @@
 		95CB2BF81861F90600DFCD90 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				95CB2C011861F90600DFCD90 /* AppDelegate.h */,
-				95CB2C021861F90600DFCD90 /* AppDelegate.m */,
 				95CB2C041861F90600DFCD90 /* Main_iPhone.storyboard */,
+				95CB2C2D18625ED400DFCD90 /* Model */,
 				95CB2C071861F90600DFCD90 /* Main_iPad.storyboard */,
 				95CB2C0A1861F90600DFCD90 /* ViewController.h */,
 				95CB2C0B1861F90600DFCD90 /* ViewController.m */,
@@ -129,6 +131,8 @@
 		95CB2BF91861F90600DFCD90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95CB2C011861F90600DFCD90 /* AppDelegate.h */,
+				95CB2C021861F90600DFCD90 /* AppDelegate.m */,
 				95CB2BFA1861F90600DFCD90 /* Matchismo-Info.plist */,
 				95CB2BFB1861F90600DFCD90 /* InfoPlist.strings */,
 				95CB2BFE1861F90600DFCD90 /* main.m */,
@@ -153,6 +157,15 @@
 				95CB2C1D1861F90700DFCD90 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95CB2C2D18625ED400DFCD90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95CB2C2A18625EA300DFCD90 /* Card.h */,
+				95CB2C2B18625EA300DFCD90 /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +269,7 @@
 				95CB2C0C1861F90600DFCD90 /* ViewController.m in Sources */,
 				95CB2C031861F90600DFCD90 /* AppDelegate.m in Sources */,
 				95CB2BFF1861F90600DFCD90 /* main.m in Sources */,
+				95CB2C2C18625EA300DFCD90 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +410,7 @@
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,6 +424,7 @@
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
